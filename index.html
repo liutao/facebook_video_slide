@@ -1,0 +1,31 @@
+<div class="slide_container">
+	<div class="slide_bg"></div>
+	<div id="blog_container">
+			
+	</div> 
+	<div class="slider_operate_container">
+		<span class="back"><</span>
+		<div id="slider_container">
+
+		</div>
+		<span class="forward">></span>
+	</div>
+	
+	<script type="text" id="template">
+		{{#slides}}
+		<div class="slide">
+			<input type="hidden" value={{article}} class="article_name"/>
+			<input type="hidden" value={{createtime}} class="createtime"/>
+			<img src="{{index_img}}"/>
+			<div class="info">
+				<p class="title">{{title}}</p>
+				<p class="brief">{{brief}}</p>
+			</div>
+			<p class="now">当前文章</p>
+		</div>
+		{{/slides}}
+	</script>
+</div>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./mustache.js"></script>
+<script type="text/javascript" src="./facebook_video_slide.js"></script>
